@@ -1,0 +1,108 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(46, 46, 46);
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.head {
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+.head p {
+  font-size: 1.5rem;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+input {
+  padding: 10px;
+  margin: 2px;
+  text-transform: capitalize;
+  background-color: rgb(24, 24, 24);
+  border-radius: 5px;
+  border: navajowhite;
+  color: white;
+}
+button {
+  padding: 10px;
+  background-color: blueviolet;
+  color: white;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 5px;
+}
+button:hover {
+  background-color: rgb(154, 95, 209);
+  letter-spacing: 2px;
+}
+#title,
+#count,
+#category,
+#search,
+#deleteAllBtn {
+  width: 100%;
+}
+
+.price span {
+  height: 10px;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: rgb(170, 16, 16);
+  border-radius: 5px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+#total::before {
+  content: "Total :  ";
+}
+.search-div {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0px;
+}
+.search-div button {
+  width: 300px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr th {
+  width: 100px;
+  text-transform: uppercase;
+}
+th,
+td {
+  padding: 5px;
+  text-align: center;
+}
+table button {
+  width: 100px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+#deleteAllBtn {
+  display: none;
+}
