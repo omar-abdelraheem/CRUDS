@@ -41,9 +41,14 @@ input {
 }
 .price{
   display: flex;
+  width: 100%;
   align-items: center;
   flex-wrap: wrap;
 }
+.price input {
+  flex-grow: 1;
+}
+
 button {
   padding: 10px;
   background-color: blueviolet;
@@ -118,7 +123,7 @@ table button {
 @media only screen and (max-width: 600px) {
   .container{
     width: 100%;
-    padding: 5px;
+    padding: 10px;
   }
   #price,#taxes,#discount,#ads,#total{
     width: 100%;
@@ -132,7 +137,7 @@ table button {
     display: none;
   }
   button{
-    margin: 1px;
+    margin: 4px;
   }
    /* thead tr{
 display: flex;
