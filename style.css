@@ -28,7 +28,7 @@ h1 {
 .inputs {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 2px;
 }
 input {
   padding: 10px;
@@ -38,6 +38,11 @@ input {
   border-radius: 5px;
   border: navajowhite;
   color: white;
+}
+.price{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
 button {
   padding: 10px;
@@ -63,13 +68,15 @@ button:hover {
 }
 
 .price span {
-  height: 10px;
-  padding: 10px;
+  height: fit-content;
+  padding: 5px;
   text-transform: uppercase;
   background-color: rgb(170, 16, 16);
   border-radius: 5px;
   font-weight: 600;
   margin-left: 5px;
+  margin: 5px;
+  display: inline-block;
 }
 #total::before {
   content: "Total :  ";
@@ -89,7 +96,7 @@ table {
 }
 
 thead tr th {
-  width: 100px;
+  /* width: 100px; */
   text-transform: uppercase;
 }
 th,
@@ -98,11 +105,41 @@ td {
   text-align: center;
 }
 table button {
-  width: 100px;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 #deleteAllBtn {
   display: none;
+}
+
+
+/* Styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  .container{
+    width: 100%;
+    padding: 5px;
+  }
+  #price,#taxes,#discount,#ads,#total{
+    width: 100%;
+  }
+  #total{
+    display: block;
+    height: fit-content;
+    margin: 2px 0px;
+  }
+  .media-query{
+    display: none;
+  }
+  button{
+    margin: 1px;
+  }
+   /* thead tr{
+display: flex;
+flex-wrap: wrap;
+   }
+   tbody tr{
+    display: flex;
+    flex-wrap: wrap;
+       } */
 }

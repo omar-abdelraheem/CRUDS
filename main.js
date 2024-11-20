@@ -44,16 +44,16 @@ const showData = () => {
   productData.forEach((product, i) => {
     table += `
       <tr>
-        <td>${i + 1}</td>
-        <td>${product.title}</td>
-        <td>${product.price}</td>
-        <td>${product.taxes}</td>
-        <td>${product.ads}</td>
-        <td>${product.discount}</td>
-        <td>${product.category}</td>
-        <td>${product.total}</td>
-        <td><button onclick="updateProduct(${i})">update</button></td>
-        <td><button onclick="deleteProduct(${i})">delete</button></td>
+        <td class="media-query"> ${i + 1}</td>
+        <td >${product.title}</td>
+        <td >${product.price}</td>
+        <td class="media-query">${product.taxes}</td>
+        <td class="media-query">${product.ads}</td>
+        <td class="media-query">${product.discount}</td>
+        <td >${product.category}</td>
+        <td class="media-query">${product.total}</td>
+        <td ><button onclick="updateProduct(${i})">update</button></td>
+        <td ><button onclick="deleteProduct(${i})">delete</button></td>
       </tr>
     `;
   });
@@ -162,16 +162,16 @@ const searchProduct = (value) => {
       if (productData[i].title.includes(value.toLowerCase())) {
         table += `
         <tr>
-          <td>${i + 1}</td>
-          <td>${productData[i].title}</td>
-          <td>${productData[i].price}</td>
-          <td>${productData[i].taxes}</td>
-          <td>${productData[i].ads}</td>
-          <td>${productData[i].discount}</td>
-          <td>${productData[i].category}</td>
-          <td>${productData[i].total}</td>
-          <td><button onclick="updateProduct(${i})">update</button></td>
-          <td><button onclick="deleteProduct(${i})">delete</button></td>
+          <td class="media-query">${i + 1}</td>
+          <td >${productData[i].title}</td>
+          <td >${productData[i].price}</td>
+          <td class="media-query">${productData[i].taxes}</td>
+          <td class="media-query">${productData[i].ads}</td>
+          <td class="media-query">${productData[i].discount}</td>
+          <td >${productData[i].category}</td>
+          <td class="media-query">${productData[i].total}</td>
+          <td ><button onclick="updateProduct(${i})">update</button></td>
+          <td ><button onclick="deleteProduct(${i})">delete</button></td>
         </tr>
       `;
       }
@@ -181,16 +181,16 @@ const searchProduct = (value) => {
       if (productData[i].category.includes(value.toLowerCase())) {
         table += `
         <tr>
-          <td>${i + 1}</td>
-          <td>${productData[i].title}</td>
-          <td>${productData[i].price}</td>
-          <td>${productData[i].taxes}</td>
-          <td>${productData[i].ads}</td>
-          <td>${productData[i].discount}</td>
-          <td>${productData[i].category}</td>
-          <td>${productData[i].total}</td>
-          <td><button onclick="updateProduct(${i})">update</button></td>
-          <td><button onclick="deleteProduct(${i})">delete</button></td>
+          <td class="media-query">${i + 1}</td>
+          <td >${productData[i].title}</td>
+          <td >${productData[i].price}</td>
+          <td class="media-query">${productData[i].taxes}</td>
+          <td class="media-query">${productData[i].ads}</td>
+          <td class="media-query">${productData[i].discount}</td>
+          <td >${productData[i].category}</td>
+          <td class="media-query">${productData[i].total}</td>
+          <td ><button onclick="updateProduct(${i})">update</button></td>
+          <td ><button onclick="deleteProduct(${i})">delete</button></td>
         </tr>
       `;
       }
@@ -201,3 +201,4 @@ const searchProduct = (value) => {
 
 showData();
 deleteAllData();
+console.log("hello world");
